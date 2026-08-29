@@ -2,15 +2,17 @@
 
 # TTHK Timetable API
 
-This is an unofficial, open source API to retrieve public timetable related information for
-Tallinn Industrial Education Center
+> **Archived:** TTHK was merged into another school, and its website is no longer active. This project is therefore no longer maintained. Feel free to learn from it!
 
-Timetable data is fetched from EduPage's public endpoints at configurable intervals and interpreted to make it easier to work with without being authenticated
+This is an unofficial, open source API to retrieve public timetable related information for
+Tallinn Industrial Education Center.
+
+Timetable data is fetched from EduPage's public endpoints at configurable intervals and interpreted to make it easier to work with without being authenticated.
 
 All endpoints in this API are automatically generated using [swagger-autogen](https://swagger-autogen.github.io/) with short summaries to explain what they do.
-The documentation is viewable upon running the server
+The documentation is viewable upon running the server.
 
-You might notice that the documentation includes ApiKey authentication but that's not the case yet, though it will likely be implemented in the future.
+You might notice that the documentation includes ApiKey authentication, but that's not the case yet, though it will likely be implemented in the future.
 
 ## Usage
 
@@ -26,28 +28,3 @@ You might notice that the documentation includes ApiKey authentication but that'
 
   ```bash
   git clone https://github.com/marcusdotn/tthk-api.git
-  ```
-
-- Enter the directory
-
-  ```bash
-  cd tthk-api
-  ```
-
-- Install dependencies
-
-  ```bash
-  bun i
-  ```
-
-- Run the server
-
-  ```bash
-  bun start
-  ```
-
-- Test if everything works
-
-  ```bash
-  $ curl localhost:5637/api/timetable/928/classes?name=TARpe22
-  ```
